@@ -32,10 +32,7 @@ const LoginForm = () => {
         password: password.value,
       });
 
-      const response = await fetch(
-        'https://dogsapi.origamid.dev/json/jwt-auth/v1/token',
-        options,
-      );
+      const response = await fetch(url, options);
       const json = await response.json();
       window.localStorage.setItem('token', json.token);
 
