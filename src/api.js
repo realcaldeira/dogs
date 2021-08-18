@@ -17,7 +17,7 @@ export function USER_GET(token) {
   return {
     url: API_URL + '/api/user',
     options: {
-      method: 'GEt',
+      method: 'GET',
       headers: {
         Authorization: 'Bearer ' + token,
       },
